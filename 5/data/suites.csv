@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Apr 09 13:41:59 GMT 2025","Wed Apr 09 13:42:01 GMT 2025","2294","","スモークテスト","","","","Webサイトを開きログインする",""
+"passed","Wed Apr 09 13:41:54 GMT 2025","Wed Apr 09 13:41:59 GMT 2025","4181","","Generic Error Test","","","","リンク切れページにアクセス",""
