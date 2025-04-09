@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Apr 09 13:18:39 GMT 2025","Wed Apr 09 13:19:02 GMT 2025","22146","","スモークテスト","","","","Webサイトを開きログインする",""
