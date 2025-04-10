@@ -1,0 +1,1 @@
+[{"uid":"b835e1bedbada41","name":"リンク切れページにアクセス","time":{"start":1744293517568,"stop":1744293518761,"duration":1193},"status":"passed","severity":"normal"},{"uid":"7bd4682cc263a82f","name":"ログインし、お弁当を注文し、お弁当を受け取る","time":{"start":1744293508774,"stop":1744293517560,"duration":8786},"status":"passed","severity":"normal"}]
