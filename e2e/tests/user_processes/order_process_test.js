@@ -17,7 +17,7 @@ Scenario('ログインし、お弁当を注文し、お弁当を受け取る', a
     I.fillField('お名前（受取時に必要です）', 'ユーザー1')
     I.fillField('電話番号（連絡時に必要です）', '09000000000')
     I.fillField('受け取り日', utils.now.format('YYYY/MM/DD'))
-    I.fillField('受け取り目安時間', utils.now.add(1, 'hour').format('hh:mmA'))
+    I.fillField('受け取り目安時間', utils.now.add(1, 'hour').format('HH:mm'))
     I.click('注文を確定する')
 
     // 注文番号を控えておく
