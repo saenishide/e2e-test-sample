@@ -1,6 +1,23 @@
 SuiteOf('注文プロセスのテスト');
 
 Scenario('ログインし、お弁当を注文し、お弁当を受け取る', async ({ I, utils }) => {
+
+    const itemName = `牛ハラミ弁当-テスト-${utils.now.format('YYYYMMDDHHmmss')}`
+
+    session("お弁当屋さんのブラウザ", () => {
+        I.amOnPage('/')
+        I.click('ログインする')
+        I.fillField('ユーザー名', 'admin')
+        I.fillField('パスワード', 'admin')
+        I.click('ログイン')
+
+        I.click("商品を追加する")
+        I.fillField('商品名', itemName)
+        I.fillField('商品説明', 'テスト用の商品です')
+        I.fillField('価格', '500')
+        I.click('追加')
+    });
+
     // 一般ユーザーとしてログインする
     I.amOnPage('/')
     I.click('ログインする')
@@ -10,7 +27,8 @@ Scenario('ログインし、お弁当を注文し、お弁当を受け取る', a
     I.see('user1 さん')
 
     // カートに商品を入れる
-    I.fillField("カートに入れる数量", "1")
+    const itemContainer = locate('tr').withText(itemName);
+    I.fillField(locate('input').after(locate('label').withText('カートに入れる数量').inside(itemContainer)), '10')
     I.click("カートに入れる")
 
     // 受け取り情報を入力し、注文を確定する
@@ -26,11 +44,11 @@ Scenario('ログインし、お弁当を注文し、お弁当を受け取る', a
 
         // お弁当屋さんのアカウントでログインする
         I.amOnPage('/')
-        I.click('ログインする')
-        I.fillField('ユーザー名', 'admin')
-        I.fillField('パスワード', 'admin')
-        I.click('ログイン')
-        I.see('admin さん')
+        // I.click('ログインする')    既にログインしているため省略
+        // I.fillField('ユーザー名', 'admin')
+        // I.fillField('パスワード', 'admin')
+        // I.click('ログイン')
+        // I.see('admin さん')
 
         // 注文管理画面から注文を引き渡す
         I.click('注文を管理する')
