@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Sun Apr 20 01:55:16 GMT 2025","Sun Apr 20 01:55:21 GMT 2025","5655","","在庫管理","","","","店舗スタッフは、デフォルトの注文可能数を変更できる。ユーザーは、デフォルトの注文可能数まで商品を注文できる。",""
+"failed","Sun Apr 20 01:55:16 GMT 2025","Sun Apr 20 01:55:27 GMT 2025","11472","","在庫管理","","","","店舗スタッフは、デフォルトの注文可能数を変更できる。ユーザーは、デフォルトの注文可能数を超えて注文するとエラーになる。",""
+"passed","Sun Apr 20 01:55:15 GMT 2025","Sun Apr 20 01:55:16 GMT 2025","833","","Generic Error Test","","","","リンク切れページにアクセス",""
+"failed","Sun Apr 20 01:55:05 GMT 2025","Sun Apr 20 01:55:15 GMT 2025","9607","","注文プロセスのテスト","","","","ログインし、お弁当を注文し、お弁当を受け取る",""
